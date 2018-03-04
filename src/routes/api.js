@@ -1,4 +1,3 @@
-// Auth middleware
 const auth = require('../middleware/authentication')
 
 const getApi = (ctx) => { ctx.body = 'Get Api' }

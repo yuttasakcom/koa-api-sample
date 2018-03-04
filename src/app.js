@@ -6,7 +6,7 @@ const app = new Koa()
 const { responseTime, logger, ratelimit } = require('./middleware')(app)
 logger()
 ratelimit()
-responseTime() // defualt = millisecond, 's' = second
+responseTime()
 
 // Routes
 require('./routes')(app)
