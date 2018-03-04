@@ -6,10 +6,23 @@
   "author": "YoProgrammer <yuttasakcom@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "test": "jest --forceExit",
+    "cover": "jest --coverage --forceExit",
+    "coveralls": "npm run cover && cat ./coverage/lcov.info | coveralls",
+    "start": "node src/server.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/src/**/*.js"
+    ]
   },
   "devDependencies": {
-    "nodemon": "^1.17.1"
+    "coveralls": "^3.0.0",
+    "jest": "^22.4.2",
+    "nodemon": "^1.17.1",
+    "supertest": "^3.0.0"
   },
   "dependencies": {
     "ioredis": "^3.2.2",
