@@ -8,8 +8,6 @@ responseTime() // defualt = millisecond, 's' = second
 logger()
 
 // Routes
-app.use(async ctx => {
-  ctx.body = 'Hello World'
-})
+require('./routes')(app)
 
 module.exports = app
