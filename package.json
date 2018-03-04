@@ -1,0 +1,17 @@
+{
+  "name": "node-koa-sample",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:yuttasakcom/node-koa-sample.git",
+  "author": "YoProgrammer <yuttasakcom@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  },
+  "dependencies": {
+    "koa": "^2.5.0"
+  }
+}
