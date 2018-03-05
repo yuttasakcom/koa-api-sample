@@ -9,8 +9,9 @@ afterEach(() => {
 })
 
 describe('routes: /api', () => {
-  test('should respond as expected', async () => {
+  test('should respond as expected', async (done) => {
     const response = await request(server).get('/api')
     expect(response.status).toEqual(200)
+    done()
   })
 })
