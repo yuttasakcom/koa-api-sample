@@ -4,9 +4,9 @@ const app = new Koa()
 
 // Middleware
 const { responseTime, logger, ratelimit } = require('./middleware')(app)
-logger()
 ratelimit()
 responseTime()
+logger()
 
 // Routes
 require('./routes')(app)
